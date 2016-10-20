@@ -48,7 +48,7 @@ plot: output.txt
 	gnuplot scripts/runtime.gp
 
 calculate: calculate.c
-	$(CC) $(CFLAGS_common) $^ -o $@
+	$(CC) $(CFLAGS_common) $^ -o $@ -lm
 
 .PHONY: clean
 clean:
